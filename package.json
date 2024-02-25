@@ -1,0 +1,36 @@
+{
+  "name": "@indutny/inflate",
+  "version": "1.0.0",
+  "description": "Naive inflate implementation",
+  "main": "lib/inflate.js",
+  "type": "module",
+  "scripts": {
+    "format": "prettier --cache --write .",
+    "lint": "npm run check:eslint && npm run check:format",
+    "check:eslint": "eslint --cache .",
+    "check:format": "prettier --cache --check .",
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/indutny/inflate.git"
+  },
+  "keywords": [
+    "inflate"
+  ],
+  "author": "Fedor Indutny <238531+indutny@users.noreply.github.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/indutny/inflate/issues"
+  },
+  "homepage": "https://github.com/indutny/inflate#readme",
+  "devDependencies": {
+    "ava": "^6.1.1",
+    "eslint": "^8.57.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-ava": "^14.0.0",
+    "eslint-plugin-import": "^2.29.1",
+    "prettier": "^3.2.5"
+  }
+}
