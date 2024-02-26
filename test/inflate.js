@@ -92,7 +92,6 @@ test('it inflates dynamic encoding data', async (t) => {
     onBlock: (block) => result.push(Buffer.from(block).toString()),
   });
   for await (const chunk of d) {
-    (await import('fs')).writeFileSync('/tmp/1.deflate', chunk);
     for (const byte of chunk) {
       inflate.push(byte);
     }
@@ -113,7 +112,6 @@ test('it inflates text file', async (t) => {
     onBlock: (block) => result.push(Buffer.from(block)),
   });
   for await (const chunk of d) {
-    (await import('fs')).writeFileSync('/tmp/1.deflate', chunk);
     for (const byte of chunk) {
       inflate.push(byte);
     }

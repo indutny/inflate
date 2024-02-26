@@ -40,7 +40,7 @@ import Inflate from '@indutny/inflate';
 const blocks = [];
 
 const inflate = new Inflate({
-  onBlock: (block) => {
+  onBlock(block) {
     blocks.push(Buffer.from(block));
   },
 });
