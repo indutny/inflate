@@ -4,6 +4,9 @@
   "description": "Naive inflate implementation",
   "main": "lib/inflate.js",
   "type": "module",
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "format": "prettier --cache --write .",
     "lint": "npm run check:eslint && npm run check:format",
