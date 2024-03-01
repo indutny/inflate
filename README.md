@@ -2,6 +2,8 @@
 
 [![npm](https://img.shields.io/npm/v/@indutny/inflate)](https://www.npmjs.com/package/@indutny/inflate)
 
+**This is an education project, please don't use it in production**
+
 Very naive and unoptimized implementation of Inflate part of the
 [DEFLATE spec](https://datatracker.ietf.org/doc/html/rfc1951).
 
